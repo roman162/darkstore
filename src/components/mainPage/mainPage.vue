@@ -32,19 +32,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  .main-page{
+    font-family: Rotonda, sans-serif;
+  }
+
   .buy-button{
-    outline: none;
-    border: none;
-    background-color: initial;
+    @include primary-button;
     padding: 20px;
-    background: linear-gradient(0deg, #7DB945, #7DB945), #7DB945;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 10px;
-    text-transform: uppercase;
     min-width: 340px;
-    cursor: pointer;
-    display: block;
     margin: 0 auto;
+    font-size: 22px;
+    font-weight: bold;
   }
 </style>

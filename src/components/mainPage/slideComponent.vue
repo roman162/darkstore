@@ -29,10 +29,17 @@ export default {
     background-color: #fff;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .slide__image{
     max-width: calc(100vw - 179px);
     width: 561px;
+  }
+
+  .slide__title{
+    font-weight: bold;
   }
 </style>

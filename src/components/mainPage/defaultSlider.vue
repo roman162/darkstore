@@ -85,6 +85,9 @@ export default {
 <style scoped lang="scss">
   .slider__title{
     text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46px;
   }
 
   .slider__list{

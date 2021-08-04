@@ -75,7 +75,6 @@ export default {
       popup.classList.add('fadeIn')
     },
     closePopup () {
-      this.inputEmail = ''
       const container = document.querySelector('.popup__wrapper')
       const popup = document.querySelector('.popup__container')
       if (event.target === container || event.target === document.querySelector('.popup__icon-close')) {
@@ -160,11 +159,14 @@ export default {
   .popup{
     flex-grow: 1;
     padding: 20px;
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+  }
+
+  .error__message{
+    font-size: 10px;
+    color: red;
   }
 
   .fadeIn, .fadeOut {
@@ -225,16 +227,8 @@ export default {
   }
 
   .popup__button{
-    outline: none;
-    border: none;
+    @include primary-button;
     padding: 10px;
-    background: linear-gradient(0deg, #7DB945, #7DB945), #7DB945;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 10px;
-    text-transform: uppercase;
-    cursor: pointer;
-    display: block;
     margin-top: 20px;
   }
 
